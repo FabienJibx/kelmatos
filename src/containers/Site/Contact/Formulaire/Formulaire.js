@@ -18,7 +18,7 @@ const Formulaire = (props) => (
                     }
             </div>
             <div className="mb-3">
-                <label htmlFor="email" className="form-label">Email address</label>
+                <label htmlFor="email" className="form-label">Adresse Mail</label>
                 <input type="email" className="form-control" id="email" aria-describedby="emailHelp"
                     name="email"
                     onChange={props.handleChange}
@@ -28,7 +28,7 @@ const Formulaire = (props) => (
                     {
                         props.touched.email && props.errors.email && <span style={{color:"red"}}>{props.errors.email}</span>
                     }
-            <div id="emailHelp" className="form-text">We'll never share your email with anyone else.</div>
+            <div id="emailHelp" className="form-text">Nous ne partagerons jamais votre adresse mail avec quiconcque.</div>
             </div>
             <div className="mb-3">
                 <label htmlFor="message" className="form-label">Message :</label>
@@ -42,7 +42,7 @@ const Formulaire = (props) => (
                         props.touched.message && props.errors.message && <span style={{color:"red"}}>{props.errors.message}</span>
                     }
             </div>
-            <button type="submit" className="btn btn-success" onClick={props.handleSubmit}>Envoyer</button>
+            <button type="submit" className="btn btn-success mb-4" onClick={props.handleSubmit}>Envoyer</button>
         </form>
     </>
 );

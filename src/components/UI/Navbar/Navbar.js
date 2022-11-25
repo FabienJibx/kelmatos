@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../../assets/images/logo-512x512.png";
+import logo from "../../../assets/images/logo1-512x512.png";
 import {NavLink} from "react-router-dom";
 
 const navbar = (props) => (
@@ -14,29 +14,15 @@ const navbar = (props) => (
             </button>
             
             <div className="collapse navbar-collapse" id="navbarColor03">
-                <ul className="navbar-nav me-auto">
+                <ul className="navbar-nav ms-auto">
                 <li className="nav-item">
                     <NavLink to="/" className="nav-link">Accueil</NavLink>
                 </li>
                 <li className="nav-item">
-                    <NavLink to="/contact" className="nav-link">Contact</NavLink>
+                    <NavLink to="/contact" className="nav-link">Réservation de studio</NavLink>
                 </li>
                 <li className="nav-item">
                     <NavLink to="/instruments" className="nav-link">Les instruments</NavLink>
-                </li>
-                <li className="nav-item">
-                    <a className="nav-link" href="#">About</a>
-                </li>
-                <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-            
-            <div className="dropdown-menu">
-                    <a className="dropdown-item" href="#">Action</a>
-                    <a className="dropdown-item" href="#">Another action</a>
-                    <a className="dropdown-item" href="#">Something else here</a>
-                <div className="dropdown-divider"></div>
-                    <a className="dropdown-item" href="#">Separated link</a>
-            </div>
                 </li>
                 </ul>
             </div>

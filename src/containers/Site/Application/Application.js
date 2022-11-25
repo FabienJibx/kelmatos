@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import banderole2 from '../../../assets/images/ampli2.jpg';
 import TitreH1 from "../../../components/UI/Titres/TitreH1";
 import axios from "axios";
 import Instrument from "./Instrument/Instrument";
@@ -61,8 +62,9 @@ state = {
     render() {
         return (
           <>  
-            <TitreH1 bgColor='bg-light'>Les instruments à disposition</TitreH1>
-            <div className="container-fluid">
+            <img src={banderole2} alt="drummer" className='img-fluid' />
+            <TitreH1 bgColor='bg-warning mb-3'>Les instruments à disposition</TitreH1>
+            <div className="container-fluid mb-4">
                 <span>Filtres : </span>
                 <select onChange={(event) => this.handleSelectionFamily(event.target.value)}>
                     <option value="-1" selected={this.state.filterFamily=== null && "selected"}>Familles</option>
