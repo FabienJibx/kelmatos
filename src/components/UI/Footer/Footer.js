@@ -5,7 +5,7 @@ import twitter from "../../../assets/images/twitter.png";
 
 const footer = (props) => (
     <>
-        <footer className="bg-light">
+        <footer className="bg-warning">
             <div className="text-center">Kelmatos Website- Tout droits réservés</div>
             <div className="row no-gutters align-items-center text-center pt-2">
                 <div className="col-4">
